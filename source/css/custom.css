@@ -1,0 +1,350 @@
+/* ==========================================
+   Wayson's Blog — 全局暗色主题 & 样式定制
+   GitHub 风格深色配色方案
+   ========================================== */
+
+/* ------------------------------------------
+   1. 暗色 CSS 变量（全局生效，不依赖 JS）
+   ------------------------------------------ */
+:root {
+    --white: rgba(255, 255, 255, 0.95) !important;
+    --font-color: rgba(255, 255, 255, 0.85) !important;
+    --light-grey: rgba(255, 255, 255, 0.75) !important;
+    --text-highlight-color: #f0f6fc !important;
+    --global-bg: #0d1117 !important;
+    --card-bg: #161b22 !important;
+    --btn-bg: #21262d !important;
+    --btn-color: #c9d1d9 !important;
+    --hr-border: #30363d !important;
+}
+
+/* ------------------------------------------
+   2. 全局基础样式
+   ------------------------------------------ */
+body {
+    background: #0d1117 !important;
+    color: #c9d1d9 !important;
+}
+
+/* 不论 light/dark 模式，一律暗色 */
+html[data-theme="light"] body,
+html[data-theme="dark"] body {
+    background: #0d1117 !important;
+    color: #c9d1d9 !important;
+}
+
+/* 链接 */
+a {
+    color: #58a6ff !important;
+}
+
+/* 标题 */
+h1, h2, h3, h4, h5, h6 {
+    color: #f0f6fc !important;
+}
+
+/* 分割线 */
+hr {
+    border-color: #30363d !important;
+}
+
+/* 选中文字 */
+::selection {
+    background: #388bfd !important;
+    color: #fff !important;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0d1117;
+}
+::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #484f58;
+}
+
+/* ------------------------------------------
+   3. 布局：导航栏 / 页面 / 卡片 / 页脚
+   ------------------------------------------ */
+#nav {
+    background: rgba(22, 27, 34, 0.85) !important;
+    backdrop-filter: blur(10px);
+}
+
+#footer {
+    background: #161b22 !important;
+}
+
+#aside-content .card-widget,
+.recent-post-item,
+.layout > div:first-child:not(.recent-posts) {
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ------------------------------------------
+   4. 导航栏：站点标题 & Follow Me 按钮
+   ------------------------------------------ */
+#site-title {
+    color: #f0f6fc !important;
+}
+
+#card-info-btn {
+    background: #21262d !important;
+    color: #58a6ff !important;
+    border: 1px solid #58a6ff !important;
+    transition: all 0.3s;
+}
+#card-info-btn:hover {
+    background: #58a6ff !important;
+    color: #fff !important;
+    box-shadow: 0 0 12px rgba(88, 166, 255, 0.4);
+}
+
+/* ------------------------------------------
+   5. 侧边栏：网站信息 / TOC 目录
+   ------------------------------------------ */
+/* webinfo 标签文字 */
+.card-webinfo .webinfo .webinfo-item div:first-child,
+.webinfo-item-title,
+.webinfo-item .webinfo-item-name,
+#aside-content .card-webinfo .webinfo-item div:first-child {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* webinfo 数字 */
+.card-webinfo .webinfo .webinfo-item div:last-child,
+.webinfo-item-count {
+    color: #f0f6fc !important;
+    font-weight: bold;
+}
+
+/* TOC 目录链接 — 不用蓝色，用浅灰白 */
+.toc-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* TOC 当前选中章节 */
+.toc-link.active {
+    background: #1f6feb !important;
+    color: #fff !important;
+    border-radius: 4px;
+}
+
+/* ------------------------------------------
+   6. 代码块
+   ------------------------------------------ */
+/* 行内代码 */
+code {
+    background: #21262d !important;
+    color: #c9d1d9 !important;
+}
+
+/* 代码块容器 */
+figure.highlight {
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px;
+}
+
+figure.highlight .highlight-tools {
+    background: #21262d !important;
+    color: #c9d1d9 !important;
+}
+
+figure.highlight pre,
+figure.highlight .code pre,
+figure.highlight table {
+    background: #161b22 !important;
+    color: #c9d1d9 !important;
+}
+
+figure.highlight .gutter pre {
+    background: #0d1117 !important;
+    color: #484f58 !important;
+}
+
+/* ------------------------------------------
+   7. 归档/标签/分类 列表页
+   ------------------------------------------ */
+/* 页面标题居中 */
+#archive .article-sort-title,
+#tag .article-sort-title,
+#category .article-sort-title,
+#body-wrap.type-tags #page .page-title,
+#body-wrap.type-categories #page .page-title {
+    text-align: center !important;
+    margin-left: 0 !important;
+    border-bottom: 1px solid #30363d !important;
+    padding-bottom: 16px !important;
+}
+
+/* 去掉时间轴竖线和圆圈，改为简洁列表 */
+.article-sort {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    border-left: none !important;
+}
+
+.article-sort-item.year {
+    font-size: 1.1em !important;
+    font-weight: 700 !important;
+    color: #f0f6fc !important;
+    margin: 24px 0 12px 0 !important;
+    padding-bottom: 6px !important;
+    border-bottom: 1px solid #30363d !important;
+}
+
+.article-sort-item {
+    margin: 0 0 4px 0 !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid rgba(48, 54, 61, 0.4) !important;
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 12px !important;
+}
+
+.article-sort-item:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* 干掉原来的圆圈标记 */
+.article-sort-item.year:before,
+.article-sort-item:before,
+.article-sort-title:before,
+.article-sort-title:after {
+    display: none !important;
+}
+
+.article-sort-item-time {
+    color: #8b949e !important;
+    font-size: 0.85em !important;
+    white-space: nowrap !important;
+    min-width: 85px !important;
+}
+
+.article-sort-item-title {
+    color: #c9d1d9 !important;
+    font-size: 1em !important;
+}
+
+.article-sort-item-title:hover {
+    color: #58a6ff !important;
+    transform: none !important;
+}
+
+.article-sort-item-img {
+    display: none !important;
+}
+
+/* 文章元信息 */
+.post-meta, .post-meta a {
+    color: #8b949e !important;
+}
+
+/* 页面标题通用样式 */
+.article-sort-title {
+    color: #f0f6fc !important;
+    border: none !important;
+    margin-bottom: 20px !important;
+}
+
+/* 标签云 */
+.tag-cloud-list {
+    text-align: center;
+    padding: 20px 0;
+    line-height: 2.5;
+}
+.tag-cloud-list a {
+    display: inline-block;
+    margin: 4px 10px;
+    transition: all 0.3s;
+}
+.tag-cloud-list a:hover {
+    transform: translateY(-2px);
+}
+
+/* 分类列表 */
+.category-lists ul.category-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.category-lists ul.category-list > li.category-list-item {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(48, 54, 61, 0.3) !important;
+    transition: all 0.2s;
+}
+.category-lists ul.category-list > li::before {
+    display: none !important;
+    content: none !important;
+}
+.category-lists ul.category-list > li:hover {
+    background: rgba(88, 166, 255, 0.08) !important;
+}
+.category-lists a.category-list-link {
+    color: #c9d1d9 !important;
+    font-size: 1.05em;
+    text-decoration: none !important;
+    flex: 1;
+}
+.category-lists a.category-list-link:hover {
+    color: #58a6ff !important;
+}
+.category-lists .category-list-count {
+    color: #8b949e;
+    font-size: 1em;
+    margin-left: 10px;
+}
+.category-lists .category-list-count::before,
+.category-lists .category-list-count::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* ------------------------------------------
+   8. 页面过渡 & 动画
+   ------------------------------------------ */
+#content-inner {
+    animation: quickFade 0.15s ease-out;
+}
+
+@keyframes quickFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ------------------------------------------
+   9. 隐藏不需要的 UI
+   ------------------------------------------ */
+/* 右下角：只保留回到顶端按钮 */
+#rightside-config-hide { display: none !important; }   /* 隐藏：readmode/翻译/暗黑切换 */
+#rightside-config { display: none !important; }        /* 隐藏：齿轮图标 */
+
+/* 顶栏主题切换 */
+.theme-switch,
+.menu-separator {
+    display: none !important;
+}
+
+/* 侧边栏 social 小图标（已用 Follow Me 按钮替代） */
+.card-info-social-icons {
+    display: none !important;
+}
+
+/* 标签/分类页不显示评论区 */
+#body-wrap.type-tags #post-comment,
+#body-wrap.type-categories #post-comment {
+    display: none !important;
+}
