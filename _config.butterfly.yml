@@ -1061,7 +1061,7 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
   bottom:
-    - <script>/* 三栏布局：自动对齐右列归档卡片 */ (function(){var r=document.querySelector('.card-recent-post'),a=document.querySelector('.card-archives');if(r&&a){function t(){a.style.marginTop=(r.getBoundingClientRect().height+16)+'px';a.style.visibility='visible';setTimeout(function(){a.style.transition='';r.style.transition=''},100)}t();new ResizeObserver(t).observe(r);window.addEventListener('resize',t)}})()</script>
+    - <script>/* 三栏布局：自动对齐右列归档卡片，兼容 PJAX */ (function(){function s(){var r=document.querySelector('.card-recent-post'),a=document.querySelector('.card-archives');if(r&&a){function t(){a.style.marginTop=(r.getBoundingClientRect().height+16)+'px';a.style.visibility='visible';setTimeout(function(){a.style.transition='';r.style.transition=''},100)}t();new ResizeObserver(t).observe(r);window.addEventListener('resize',t)}}s();document.addEventListener('pjax:complete',s)})()</script>
     # - <script src="xxxx"></script>
 
 # CDN Settings

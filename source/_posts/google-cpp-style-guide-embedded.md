@@ -1,6 +1,6 @@
 ---
 title: "嵌入式开发者视角的 Google C++ Style Guide 实战解读"
-date: 2026-06-28T12:00:00+08:00
+date: 2025-03-21T12:00:00+08:00
 categories: ["嵌入式"]
 tags: ["C++", "代码规范", "软件工程"]
 cover: /images/google-cpp-style-guide-embedded/google-style-cover.png
