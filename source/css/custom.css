@@ -70,8 +70,71 @@ hr {
 }
 
 /* ------------------------------------------
-   3. 布局：导航栏 / 页面 / 卡片 / 页脚
+   3. 布局：三栏 Grid（宽屏）— 左:侧边栏 中:文章 右:归档&最近文章
    ------------------------------------------ */
+@media screen and (min-width: 1200px) {
+    #content-inner.layout {
+        display: grid !important;
+        grid-template-columns: 260px minmax(0, 1fr) 260px !important;
+        grid-auto-rows: max-content;
+        column-gap: 20px;
+        max-width: 1400px !important;
+        align-items: start;
+    }
+
+    #content-inner.layout > div {
+        width: 100% !important;
+        max-width: none !important;
+        float: none !important;
+        margin: 0 !important;
+    }
+
+    #aside-content,
+    #aside-content .sticky_layout {
+        display: contents !important;
+    }
+
+    #content-inner.layout > div:not(#aside-content) {
+        grid-column: 2 / 3 !important;
+        grid-row: 1 / 200 !important;
+    }
+
+    .card-widget:not(.card-recent-post):not(.card-archives) {
+        grid-column: 1 / 2 !important;
+        margin: 0 0 20px 0 !important;
+    }
+
+    .card-recent-post,
+    .card-archives {
+        grid-column: 3 / 4 !important;
+        grid-row: 1 / 200 !important;
+        align-self: start !important;
+        margin-bottom: 0 !important;
+        padding: 16px 20px !important;
+        transition: none !important;
+    }
+
+    .card-recent-post { margin-top: 0 !important; }
+
+    .card-archives {
+        position: sticky !important;
+        top: 20px !important;
+        visibility: hidden;
+        transition: none !important;
+    }
+
+    .card-archives .item-headline,
+    .card-recent-post .item-headline {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .layout {
+        flex-direction: column !important;
+    }
+}
+
 #nav {
     background: rgba(22, 27, 34, 0.85) !important;
     backdrop-filter: blur(10px);
@@ -336,6 +399,12 @@ figure.highlight .gutter pre {
 .theme-switch,
 .menu-separator {
     display: none !important;
+}
+
+/* 个人信息卡片 — 文章/标签/分类 纯数据展示，不可点击 */
+.site-data a {
+    pointer-events: none !important;
+    cursor: default !important;
 }
 
 /* 侧边栏 social 小图标（已用 Follow Me 按钮替代） */

@@ -1,9 +1,9 @@
 ---
-title: "嵌入式工程师视角的 Google C++ Style Guide 实战解读"
+title: "嵌入式开发者视角的 Google C++ Style Guide 实战解读"
 date: 2026-06-28T12:00:00+08:00
 categories: ["嵌入式"]
 tags: ["C++", "代码规范", "软件工程"]
-cover: /images/google-cpp-style-guide-embedded/google-style-cover.png.png
+cover: /images/google-cpp-style-guide-embedded/google-style-cover.png
 top_img: false
 ---
 
@@ -17,7 +17,7 @@ top_img: false
 
 我不是来翻译官方文档的。下面从写了几十万行嵌入式 C/C++ 的经验出发，拆哪些能直接用、哪些得改改、哪些 Google 自己也没那么认真。
 
-![Google C++ Style Guide](/images/google-cpp-style-guide-embedded/google-style-cover.png.png)
+![Google C++ Style Guide](/images/google-cpp-style-guide-embedded/google-style-cover.png)
 
 ---
 
