@@ -11,7 +11,7 @@ top_img: false
 
 ---
 
-**二值信号量（Binary Semaphore）。**
+**二值信号量（Binary Semaphore）**
 
 就像一个只能放一个令牌的盒子。任务调用 `xSemaphoreTake()` 拿走令牌，盒子空了；另一个任务（或 ISR）调用 `xSemaphoreGive()` 放回令牌，任务被唤醒。
 
@@ -51,7 +51,7 @@ void vUARTProcessor(void *pv) {
 
 ---
 
-**计数信号量（Counting Semaphore）。**
+**计数信号量（Counting Semaphore）**
 
 和二进制一样，但令牌可以有多个。适合管理有限资源——比如 3 个 DMA 通道：
 
@@ -73,7 +73,7 @@ void vTask(void *pv) {
 
 ---
 
-**互斥锁（Mutex）。**
+**互斥锁（Mutex）**
 
 看上去跟二值信号量一模一样——都是 Take/Give。但互斥锁多了一个关键机制：**优先级继承**。
 
@@ -96,7 +96,7 @@ Task B 拿到 mutex
 
 ---
 
-**互斥锁和递归锁。**
+**互斥锁和递归锁**
 
 标准互斥锁不能重入：一个任务已经持有它了，再 Take 一次会死锁。
 
@@ -141,7 +141,7 @@ TempTask:  Take(I2C_mutex) → ReadTemp() → error → LogError() → Take(I2C_
 
 ---
 
-**信号量 vs 任务通知。**
+**信号量 vs 任务通知**
 
 这是 FreeRTOS 里一个常见的性能选择。任务通知能替代大部分二值信号量的场景，而且更快——通知直接操作 TCB 里的一个字段，不需要创建单独的内核对象。
 
