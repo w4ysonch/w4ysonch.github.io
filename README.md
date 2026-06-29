@@ -1,6 +1,6 @@
 # w4ysonch.github.io
 
-Wayson 的技术博客 — 专注 C/C++ 嵌入式、RTOS、Linux Kernel 底层架构。
+Wayson的技术博客 — 专注 C/C++、RTOS、嵌入式Linux、AI CLI开发与学习笔记
 
 ## 技术栈
 
