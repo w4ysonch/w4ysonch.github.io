@@ -1,7 +1,7 @@
 ---
 title: "FreeRTOS 学习笔记（一）：任务管理"
 date: 2025-08-10T22:00:00+08:00
-categories: ["学习笔记"]
+categories: ["FreeRTOS"]
 tags: ["FreeRTOS", "RTOS", "嵌入式"]
 cover: /images/FreeRTOS_note/image.png
 top_img: false

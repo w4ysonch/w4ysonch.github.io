@@ -1,7 +1,7 @@
 ---
 title: "FreeRTOS 学习笔记（三）：信号量与互斥锁"
 date: 2025-08-15T22:32:12+08:00
-categories: ["学习笔记"]
+categories: ["FreeRTOS"]
 tags: ["FreeRTOS", "RTOS", "嵌入式"]
 cover: /images/FreeRTOS_note/image.png
 top_img: false

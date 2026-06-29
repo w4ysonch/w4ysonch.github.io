@@ -1,7 +1,7 @@
 ---
 title: "FreeRTOS 学习笔记（二）：队列"
 date: 2025-08-12T19:21:34+08:00
-categories: ["学习笔记"]
+categories: ["FreeRTOS"]
 tags: ["FreeRTOS", "RTOS", "嵌入式"]
 cover: /images/FreeRTOS_note/image.png
 top_img: false
