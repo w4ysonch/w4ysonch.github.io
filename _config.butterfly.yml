@@ -1036,7 +1036,7 @@ pwa:
 Open_Graph_meta:
   enable: true
   option:
-    # twitter_card:
+    description: 'Wayson的技术博客 — 专注 C/C++、RTOS、嵌入式Linux、AI CLI开发与学习笔记'
     # twitter_image:
     # twitter_id:
     # twitter_site:
@@ -1060,12 +1060,12 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
+    - <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png">
     - <meta property="og:image" content="https://w4ysonch.github.io/images/avatar.png">
     - <meta name="twitter:card" content="summary_large_image">
     - <meta name="twitter:image" content="https://w4ysonch.github.io/images/avatar.png">
   bottom:
-    - <script>/* 三栏布局：自动对齐右列归档卡片，兼容 PJAX */ (function(){function s(){var r=document.querySelector('.card-recent-post'),a=document.querySelector('.card-archives');if(r&&a){function t(){a.style.marginTop=(r.getBoundingClientRect().height+16)+'px';a.style.visibility='visible';setTimeout(function(){a.style.transition='';r.style.transition=''},100)}t();new ResizeObserver(t).observe(r);window.addEventListener('resize',t)}}s();document.addEventListener('pjax:complete',s)})()</script>
-    # - <script src="xxxx"></script>
+    - <script src="/js/custom-layout.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work

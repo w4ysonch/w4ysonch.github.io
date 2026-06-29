@@ -5,7 +5,7 @@
 # Site
 title: Wayson's Blog
 subtitle: 'C/C++ | RTOS | Linux 嵌入式开发博客'
-description: 'Wayson的技术博客 — 专注 C/C++ 、RTOS、嵌入式Linux、AI CLI、游戏生态工具'
+description: 'Wayson的技术博客 — 专注 C/C++、RTOS、嵌入式Linux、AI CLI开发与学习笔记'
 keywords: C/C++, RTOS, Linux Kernel, 嵌入式, 架构设计, embedmq, 事件总线
 author: Wayson
 language: zh-CN
