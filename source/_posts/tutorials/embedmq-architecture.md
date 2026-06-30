@@ -2,7 +2,7 @@
 title: "从零拆解 embedmq：一个纯 C 实现的嵌入式线程间事件总线"
 date: 2026-06-20T12:59:47+08:00
 draft: false
-categories: ["嵌入式"]
+categories: ["技术向"]
 tags: ["C语言", "架构设计", "开源", "Linux"]
 cover: /images/embedmq/cover.png
 top_img: false

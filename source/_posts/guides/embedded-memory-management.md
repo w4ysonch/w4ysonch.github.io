@@ -1,7 +1,7 @@
 ---
 title: "嵌入式内存管理：从 Flash 到 Cache，代码的每一字节去哪了"
 date: 2026-01-15T22:00:00+08:00
-categories: ["嵌入式"]
+categories: ["知识向"]
 tags: ["内存管理", "嵌入式", "C/C++"]
 cover: /images/memory-manage/cover.png
 top_img: false
