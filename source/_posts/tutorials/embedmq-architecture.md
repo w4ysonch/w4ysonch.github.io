@@ -4,7 +4,7 @@ date: 2026-06-20T12:59:47+08:00
 draft: false
 categories: ["技术向"]
 tags: ["C语言", "架构设计", "开源", "Linux"]
-cover: /images/embedmq/cover.png
+cover: /images/tutorials/embedmq/cover.png
 top_img: false
 ---
 
@@ -16,7 +16,7 @@ top_img: false
 
 **[embedmq](https://github.com/w4ysonch/embedmq)** 是我写的一个零依赖 C11 库，把线程间消息分发压缩成三个函数：`create`、`register`、`post`。本文从源码层面拆解它的每一个设计决策。
 
-![架构图](/images/embedmq/arch.png)
+![架构图](/images/tutorials/embedmq/arch.png)
 
 ---
 
@@ -554,7 +554,7 @@ x86-64 Linux，Release 构建（`-O2`），单生产者 + 单消费者线程：
 
 热路径上没有字符串操作、没有内存分配，只有一次整数比较（二分查找）、一次 `memcpy`（ring buffer 写入）、一次信号量操作。
 
-![benchmark](/images/embedmq/benchmark.png)
+![benchmark](/images/tutorials/embedmq/benchmark.png)
 
 复现方法：
 

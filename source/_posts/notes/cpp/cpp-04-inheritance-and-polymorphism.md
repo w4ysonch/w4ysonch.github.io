@@ -1,9 +1,9 @@
 ---
 title: "C++ 学习笔记（四）：继承与多态——虚函数和 vtable 的代价"
 date: 2025-05-04T15:21:32+08:00
-categories: ["C/C++"]
+categories: ["笔记"]
 tags: ["C++", "嵌入式", "学习笔记"]
-cover: /images/cpp_note/cover.png
+cover: /images/notes/cpp_note/cover.png
 top_img: false
 ---
 

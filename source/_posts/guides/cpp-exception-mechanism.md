@@ -1,9 +1,9 @@
 ---
 title: "C++ 异常机制：为什么嵌入式不用它，用什么替代"
 date: 2026-01-04T08:00:00+08:00
-categories: ["C/C++"]
+categories: ["知识向"]
 tags: ["C++", "异常", "嵌入式"]
-cover: /images/cpp_note/cover.png
+cover: /images/notes/cpp_note/cover.png
 top_img: false
 ---
 

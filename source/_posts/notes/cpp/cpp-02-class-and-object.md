@@ -1,9 +1,9 @@
 ---
 title: "C++ 学习笔记（二）：类与对象——构造、析构、访问控制"
 date: 2025-05-02T14:23:11+08:00
-categories: ["C/C++"]
+categories: ["笔记"]
 tags: ["C++", "嵌入式", "学习笔记"]
-cover: /images/cpp_note/cover.png
+cover: /images/notes/cpp_note/cover.png
 top_img: false
 ---
 

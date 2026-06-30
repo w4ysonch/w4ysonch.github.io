@@ -1,9 +1,9 @@
 ---
 title: "C++ 学习笔记（五）：模板基础——函数模板与类模板"
 date: 2025-05-04T15:55:21+08:00
-categories: ["C/C++"]
+categories: ["笔记"]
 tags: ["C++", "嵌入式", "学习笔记"]
-cover: /images/cpp_note/cover.png
+cover: /images/notes/cpp_note/cover.png
 top_img: false
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "C++ 学习笔记（七）：智能指针——unique_ptr 与 shared_ptr"
 date: 2025-05-12T22:00:00+08:00
-categories: ["C/C++"]
+categories: ["笔记"]
 tags: ["C++", "嵌入式", "学习笔记"]
-cover: /images/cpp_note/cover.png
+cover: /images/notes/cpp_note/cover.png
 top_img: false
 ---
 

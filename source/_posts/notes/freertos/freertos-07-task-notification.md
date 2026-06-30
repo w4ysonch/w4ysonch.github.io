@@ -1,9 +1,9 @@
 ---
 title: "FreeRTOS 学习笔记（七）：任务通知"
 date: 2025-09-28T14:12:51+08:00
-categories: ["FreeRTOS"]
-tags: ["FreeRTOS", "RTOS", "嵌入式"]
-cover: /images/FreeRTOS_note/image.png
+categories: ["笔记"]
+tags: ["FreeRTOS", "RTOS", "嵌入式", "学习笔记"]
+cover: /images/notes/FreeRTOS_note/image.png
 top_img: false
 ---
 

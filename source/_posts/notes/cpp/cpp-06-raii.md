@@ -1,9 +1,9 @@
 ---
 title: "C++ 学习笔记（六）：RAII——资源管理的核心思想"
 date: 2025-05-05T17:12:45+08:00
-categories: ["C/C++"]
+categories: ["笔记"]
 tags: ["C++", "嵌入式", "学习笔记"]
-cover: /images/cpp_note/cover.png
+cover: /images/notes/cpp_note/cover.png
 top_img: false
 ---
 

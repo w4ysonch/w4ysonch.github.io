@@ -1,9 +1,9 @@
 ---
 title: "C++ 学习笔记（九）：STL 容器实战——vector、map、string"
 date: 2025-05-14T21:00:00+08:00
-categories: ["C/C++"]
+categories: ["笔记"]
 tags: ["C++", "嵌入式", "学习笔记"]
-cover: /images/cpp_note/cover.png
+cover: /images/notes/cpp_note/cover.png
 top_img: false
 ---
 

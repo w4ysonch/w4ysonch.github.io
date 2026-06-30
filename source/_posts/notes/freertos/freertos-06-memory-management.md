@@ -1,9 +1,9 @@
 ---
 title: "FreeRTOS 学习笔记（六）：内存管理"
 date: 2025-09-24T23:42:36+08:00
-categories: ["FreeRTOS"]
-tags: ["FreeRTOS", "RTOS", "嵌入式"]
-cover: /images/FreeRTOS_note/image.png
+categories: ["笔记"]
+tags: ["FreeRTOS", "RTOS", "嵌入式", "学习笔记"]
+cover: /images/notes/FreeRTOS_note/image.png
 top_img: false
 ---
 
