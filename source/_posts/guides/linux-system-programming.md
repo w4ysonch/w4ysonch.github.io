@@ -1,6 +1,6 @@
 ---
 title: "Linux 系统编程：进程、文件 I/O、IPC 与网络"
-date: 2026-02-13T10:00:00+08:00
+date: 2025-11-13T21:34:06+08:00
 categories: ["知识向"]
 tags: ["Linux", "系统编程", "C"]
 cover: /images/guides/linux-system-programming/cover.png
